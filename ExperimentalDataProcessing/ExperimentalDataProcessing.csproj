@@ -65,6 +65,7 @@
     <Reference Include="System.Security.Principal.Windows, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Security.Principal.Windows.4.7.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -81,6 +82,8 @@
     <Compile Include="Classes\Model.cs" />
     <Compile Include="Classes\Processing.cs" />
     <Compile Include="Classes\RandomDoubleGenerator.cs" />
+    <Compile Include="Extensions\ChartExtensions.cs" />
+    <Compile Include="Extensions\DoubleArrayExtensions.cs" />
     <Compile Include="Extensions\RandomExtensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,6 +111,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="CourseWork\" />
     <Folder Include="Data\Bin\" />
     <Folder Include="Data\Dat\" />
     <Folder Include="Data\Wav\" />
@@ -117,6 +121,9 @@
     <Folder Include="Screenshots\2 semester\" />
     <Folder Include="Tasks\1 semester\" />
     <Folder Include="Tasks\2 semester\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

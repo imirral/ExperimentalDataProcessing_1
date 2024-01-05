@@ -65,12 +65,12 @@ namespace ExperimentalDataProcessing.Classes
 				result[i] = Random.NextDouble(-r, r);
 			}
 
-			var xMin = result.Min();
-			var xMax = result.Max();
+			var min = result.Min();
+			var max = result.Max();
 
 			for (var i = 0; i < n; i++)
 			{
-				result[i] = ((result[i] - xMin) / (xMax - xMin) - 0.5) * 2 * r;
+				result[i] = ((result[i] - min) / (max - min) - 0.5) * 2 * r;
 			}
 
 			return result;
