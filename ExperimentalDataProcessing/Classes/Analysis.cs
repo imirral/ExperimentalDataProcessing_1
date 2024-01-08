@@ -96,9 +96,9 @@ namespace ExperimentalDataProcessing.Classes
 			{
 				var intervalIndex = (int)((value - min) / intervalWidth);
 
-				if (intervalIndex == m)
+				if (intervalIndex >= m)
 				{
-					intervalIndex--;
+					intervalIndex = m - 1;
 				}
 
 				counts[intervalIndex]++;
@@ -114,7 +114,7 @@ namespace ExperimentalDataProcessing.Classes
 			return result;
 		}
 
-		public double[] AutoСorrelation(double[] data)
+		public double[] AutoCorrelation(double[] data)
 		{
 			if (data == null)
 			{
@@ -242,10 +242,10 @@ namespace ExperimentalDataProcessing.Classes
 				double re = 0;
 				double im = 0;
 
-				for (var k = 0; k < length - 1; k++)
+				for (var j = 0; j < length; j++)
 				{
-					re += data[k] * Math.Cos(2 * Math.PI * i * k / length);
-					im += data[k] * Math.Sin(2 * Math.PI * i * k / length);
+					re += data[j] * Math.Cos(2 * Math.PI * i * j / length);
+					im += data[j] * Math.Sin(2 * Math.PI * i * j / length);
 				}
 
 				re /= length;
@@ -271,8 +271,6 @@ namespace ExperimentalDataProcessing.Classes
 
 			var length = data.Length;
 
-			var fourierSeries = Fourier(data);
-
 			var df = 1.0 / (length * dt);
 
 			var xValues = new double[length];
@@ -281,7 +279,7 @@ namespace ExperimentalDataProcessing.Classes
 			for (var i = 0; i < length; i++)
 			{
 				xValues[i] = Math.Round(i * df, 2);
-				yValues[i] = fourierSeries[i] * df;
+				yValues[i] = data[i] * df;
 			}
 
 			return new Tuple<double[], double[]>(xValues, yValues);

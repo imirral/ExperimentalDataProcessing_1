@@ -59,5 +59,35 @@ namespace ExperimentalDataProcessing.Extensions
 
 			chart.Series.Add(series);
 		}
+
+		public static void AddDataSeries(this Chart chart, double[] xValues, double[] yValues, int length)
+		{
+			if (xValues == null || yValues == null)
+			{
+				throw new Exception("Массив/ы имеет/ют значение null");
+			}
+
+			if (xValues.Length == 0 || yValues.Length == 0)
+			{
+				throw new Exception("Массив/ы не содержит/ат элементов");
+			}
+
+			if (length == 0)
+			{
+				throw new Exception("Количество элементов результирующей серии данных равно 0");
+			}
+
+			var series = new Series
+			{
+				ChartType = SeriesChartType.Line,
+			};
+
+			for (var i = 0; i < length; i++)
+			{
+				series.Points.AddXY(Math.Round(xValues[i]), yValues[i]);
+			}
+
+			chart.Series.Add(series);
+		}
 	}
 }

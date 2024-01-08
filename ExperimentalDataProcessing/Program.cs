@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using ExperimentalDataProcessing.Labs._1_semester;
+using ExperimentalDataProcessing.Labs.CourceWork;
 
 namespace ExperimentalDataProcessing
 {
@@ -12,7 +14,7 @@ namespace ExperimentalDataProcessing
 
 			Application.SetCompatibleTextRenderingDefault(false);
 
-			//Application.Run(new MyForm());
+			//Application.Run(new FinalWorkForm());
 		}
 	}
 }

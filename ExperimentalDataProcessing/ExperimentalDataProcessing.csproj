@@ -85,8 +85,260 @@
     <Compile Include="Extensions\ChartExtensions.cs" />
     <Compile Include="Extensions\DoubleArrayExtensions.cs" />
     <Compile Include="Extensions\RandomExtensions.cs" />
+    <Compile Include="Labs\1 semester\FinalWorkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\FinalWorkForm.Designer.cs">
+      <DependentUpon>FinalWorkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab10_1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab10_1Form.Designer.cs">
+      <DependentUpon>Lab10_1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab10_2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab10_2Form.Designer.cs">
+      <DependentUpon>Lab10_2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab11_1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab11_1Form.Designer.cs">
+      <DependentUpon>Lab11_1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab12_1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab12_1Form.Designer.cs">
+      <DependentUpon>Lab12_1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab12_2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab12_2Form.Designer.cs">
+      <DependentUpon>Lab12_2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab12_3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab12_3Form.Designer.cs">
+      <DependentUpon>Lab12_3Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab13_1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab13_1Form.Designer.cs">
+      <DependentUpon>Lab13_1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab13_2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab13_2Form.Designer.cs">
+      <DependentUpon>Lab13_2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab14_1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab14_1Form.Designer.cs">
+      <DependentUpon>Lab14_1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab15_1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab15_1Form.Designer.cs">
+      <DependentUpon>Lab15_1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab15_2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab15_2Form.Designer.cs">
+      <DependentUpon>Lab15_2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab1_1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab1_1Form.Designer.cs">
+      <DependentUpon>Lab1_1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab2_1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab2_1Form.Designer.cs">
+      <DependentUpon>Lab2_1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab3_1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab3_1Form.Designer.cs">
+      <DependentUpon>Lab3_1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab3_2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab3_2Form.Designer.cs">
+      <DependentUpon>Lab3_2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab4_1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab4_1Form.Designer.cs">
+      <DependentUpon>Lab4_1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab4_2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab4_2Form.Designer.cs">
+      <DependentUpon>Lab4_2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab5_1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab5_1Form.Designer.cs">
+      <DependentUpon>Lab5_1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab6_1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab6_1Form.Designer.cs">
+      <DependentUpon>Lab6_1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab6_2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab6_2Form.Designer.cs">
+      <DependentUpon>Lab6_2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab6_3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab6_3Form.Designer.cs">
+      <DependentUpon>Lab6_3Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab7_1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab7_1Form.Designer.cs">
+      <DependentUpon>Lab7_1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab8_1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab8_1Form.Designer.cs">
+      <DependentUpon>Lab8_1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab9_1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab9_1Form.Designer.cs">
+      <DependentUpon>Lab9_1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab9_2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\1 semester\Lab9_2Form.Designer.cs">
+      <DependentUpon>Lab9_2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\CourceWork\DopplerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\CourceWork\DopplerForm.Designer.cs">
+      <DependentUpon>DopplerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\CourceWork\DopplerWithNoiseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\CourceWork\DopplerWithNoiseForm.Designer.cs">
+      <DependentUpon>DopplerWithNoiseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Labs\1 semester\FinalWorkForm.resx">
+      <DependentUpon>FinalWorkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab10_1Form.resx">
+      <DependentUpon>Lab10_1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab10_2Form.resx">
+      <DependentUpon>Lab10_2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab11_1Form.resx">
+      <DependentUpon>Lab11_1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab12_1Form.resx">
+      <DependentUpon>Lab12_1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab12_2Form.resx">
+      <DependentUpon>Lab12_2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab12_3Form.resx">
+      <DependentUpon>Lab12_3Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab13_1Form.resx">
+      <DependentUpon>Lab13_1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab13_2Form.resx">
+      <DependentUpon>Lab13_2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab14_1Form.resx">
+      <DependentUpon>Lab14_1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab15_1Form.resx">
+      <DependentUpon>Lab15_1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab15_2Form.resx">
+      <DependentUpon>Lab15_2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab1_1Form.resx">
+      <DependentUpon>Lab1_1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab2_1Form.resx">
+      <DependentUpon>Lab2_1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab3_1Form.resx">
+      <DependentUpon>Lab3_1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab3_2Form.resx">
+      <DependentUpon>Lab3_2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab4_1Form.resx">
+      <DependentUpon>Lab4_1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab4_2Form.resx">
+      <DependentUpon>Lab4_2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab5_1Form.resx">
+      <DependentUpon>Lab5_1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab6_1Form.resx">
+      <DependentUpon>Lab6_1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab6_2Form.resx">
+      <DependentUpon>Lab6_2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab6_3Form.resx">
+      <DependentUpon>Lab6_3Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab7_1Form.resx">
+      <DependentUpon>Lab7_1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab8_1Form.resx">
+      <DependentUpon>Lab8_1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab9_1Form.resx">
+      <DependentUpon>Lab9_1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\1 semester\Lab9_2Form.resx">
+      <DependentUpon>Lab9_2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\CourceWork\DopplerForm.resx">
+      <DependentUpon>DopplerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labs\CourceWork\DopplerWithNoiseForm.resx">
+      <DependentUpon>DopplerWithNoiseForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -111,11 +363,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CourseWork\" />
     <Folder Include="Data\Bin\" />
     <Folder Include="Data\Dat\" />
     <Folder Include="Data\Wav\" />
-    <Folder Include="Labs\1 semester\" />
     <Folder Include="Labs\2 semester\" />
     <Folder Include="Screenshots\1 semester\" />
     <Folder Include="Screenshots\2 semester\" />

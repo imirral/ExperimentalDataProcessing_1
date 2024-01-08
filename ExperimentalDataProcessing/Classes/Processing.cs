@@ -142,13 +142,13 @@ namespace ExperimentalDataProcessing.Classes
 				throw new Exception("Массив имеет значение null");
 			}
 
-			if (data.GetLength(0) == 0 || data.GetLength(1) == 0)
+			if (data.Length == 0 || data[0].Length == 0)
 			{
 				throw new Exception("Массив не содержит элементов");
 			}
 
-			var m = data.GetLength(0);
-			var n = data.GetLength(1);
+			var m = data.Length;
+			var n = data[0].Length;
 
 			var result = new double[n];
 
@@ -309,9 +309,9 @@ namespace ExperimentalDataProcessing.Classes
 
 		public double[] Bpf(double fc1, double fc2, double dt, int m)
 		{
-			if (fc2 <= 0)
+			if (fc2 <= 0 || fc1 <= 0 || fc1 >= fc2)
 			{
-				throw new Exception("Частота среза меньше либо равна 0");
+				throw new Exception("Неверный диапазон частот среза");
 			}
 
 			if (dt <= 0)

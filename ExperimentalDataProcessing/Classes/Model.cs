@@ -28,7 +28,9 @@ namespace ExperimentalDataProcessing.Classes
 
 			for (var i = 0; i < n; i++)
 			{
-				result[i] = -a * dt + b;
+				var k = i * dt;
+
+				result[i] = -a * k + b;
 			}
 
 			return result;
@@ -45,7 +47,9 @@ namespace ExperimentalDataProcessing.Classes
 
 			for (var i = 0; i < n; i++)
 			{
-				result[i] = b * Math.Exp(-a * dt);
+				var k = i * dt;
+
+				result[i] = b * Math.Exp(-a * k);
 			}
 
 			return result;
@@ -201,7 +205,7 @@ namespace ExperimentalDataProcessing.Classes
 
 				for (var j = 0; j < a.Length; j++)
 				{
-					xk += a[i] * Math.Sin(2 * Math.PI * f[i] * dt * j);
+					xk += a[j] * Math.Sin(2 * Math.PI * f[j] * dt * i);
 				}
 
 				result[i] = xk;
@@ -251,11 +255,6 @@ namespace ExperimentalDataProcessing.Classes
 				throw new Exception("Массив/ы не содержит/ат элементов");
 			}
 
-			if (data1.Length != data2.Length)
-			{
-				throw new Exception("Количество элементов в массивах не совпадает");
-			}
-
 			var length = data1.Length;
 
 			var result = new double[length];
@@ -268,7 +267,7 @@ namespace ExperimentalDataProcessing.Classes
 			return result;
 		}
 
-		public double[] ConvolModel(double[] x, double[] h, int m)
+		public double[] ConvolutionModel(double[] x, double[] h, int m)
 		{
 			if (x == null || h == null)
 			{
@@ -278,11 +277,6 @@ namespace ExperimentalDataProcessing.Classes
 			if (x.Length == 0 || h.Length == 0)
 			{
 				throw new Exception("Массив/ы не содержит/ат элементов");
-			}
-
-			if (x.Length != h.Length)
-			{
-				throw new Exception("Количество элементов в массивах не совпадает");
 			}
 
 			var length = x.Length;
