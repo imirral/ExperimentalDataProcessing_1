@@ -14,7 +14,7 @@ namespace ExperimentalDataProcessing
 
 			Application.SetCompatibleTextRenderingDefault(false);
 
-			//Application.Run(new FinalWorkForm());
+			Application.Run(new DopplerWithNoiseForm());
 		}
 	}
 }

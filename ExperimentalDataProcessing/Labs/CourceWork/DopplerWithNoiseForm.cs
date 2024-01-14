@@ -108,13 +108,45 @@ namespace ExperimentalDataProcessing.Labs.CourceWork
 				var spectrumDataObserver = analysis.SpectrumFourier(fourierDataObserver, Dt);
 				var spectrumDataSource = analysis.SpectrumFourier(fourierDataSource, Dt);
 
-				//for (var i = 0; i < dataObserverWithNoise.Length; i++)
-				//{
-				//	dataObserverWithNoise[i] *= 10;
-				//	dataSourceWithNoise[i] *= 10;
-				//	spectrumDataObserver.Item2[i] *= 10;
-				//	spectrumDataSource.Item2[i] *= 10;
-				//}
+				if (checkBox2.Checked)
+				{
+					for (var i = 0; i < dataObserverWithNoise.Length; i++)
+					{
+						dataObserverWithNoise[i] *= 10;
+						dataSourceWithNoise[i] *= 10;
+						spectrumDataObserver.Item2[i] *= 10;
+						spectrumDataSource.Item2[i] *= 10;
+					}
+				}
+
+				double amplitudeObserver = double.MinValue;
+				double frequencyObserver = 0;
+
+				for (var i = 0; i < spectrumDataObserver.Item2.Length / 2; i++)
+				{
+					if (spectrumDataObserver.Item2[i] > amplitudeObserver)
+					{
+						amplitudeObserver = spectrumDataObserver.Item2[i];
+						frequencyObserver = spectrumDataObserver.Item1[i];
+					}
+				}
+
+				double amplitudeSource = double.MinValue;
+				double frequencySource = 0;
+
+				for (var i = 0; i < spectrumDataSource.Item2.Length / 2; i++)
+				{
+					if (spectrumDataSource.Item2[i] > amplitudeSource)
+					{
+						amplitudeSource = spectrumDataSource.Item2[i];
+						frequencySource = spectrumDataSource.Item1[i];
+					}
+				}
+
+				textBox1.Text = $@"{frequencyObserver}";
+				textBox2.Text = $@"{Math.Round(amplitudeObserver, 3)}";
+				textBox3.Text = $@"{frequencySource}";
+				textBox4.Text = $@"{Math.Round(amplitudeSource, 3)}";
 
 				chart1.AddDataSeries(dataObserverWithNoise);
 				chart2.AddDataSeries(dataSourceWithNoise);

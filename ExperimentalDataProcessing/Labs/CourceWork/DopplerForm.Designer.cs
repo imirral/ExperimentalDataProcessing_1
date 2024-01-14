@@ -64,6 +64,14 @@ namespace ExperimentalDataProcessing.Labs.CourceWork
 			this.txtf = new System.Windows.Forms.TextBox();
 			this.btnPlot = new System.Windows.Forms.Button();
 			this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.label16 = new System.Windows.Forms.Label();
+			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.label17 = new System.Windows.Forms.Label();
+			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.label18 = new System.Windows.Forms.Label();
+			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.label19 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.chart4)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
@@ -351,11 +359,91 @@ namespace ExperimentalDataProcessing.Labs.CourceWork
 			this.chart1.Size = new System.Drawing.Size(709, 289);
 			this.chart1.TabIndex = 65;
 			// 
+			// textBox1
+			// 
+			this.textBox1.Location = new System.Drawing.Point(101, 720);
+			this.textBox1.Name = "textBox1";
+			this.textBox1.ReadOnly = true;
+			this.textBox1.Size = new System.Drawing.Size(100, 22);
+			this.textBox1.TabIndex = 89;
+			// 
+			// label16
+			// 
+			this.label16.AutoSize = true;
+			this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label16.Location = new System.Drawing.Point(48, 720);
+			this.label16.Name = "label16";
+			this.label16.Size = new System.Drawing.Size(38, 20);
+			this.label16.TabIndex = 88;
+			this.label16.Text = "fo =";
+			// 
+			// textBox2
+			// 
+			this.textBox2.Location = new System.Drawing.Point(101, 758);
+			this.textBox2.Name = "textBox2";
+			this.textBox2.ReadOnly = true;
+			this.textBox2.Size = new System.Drawing.Size(100, 22);
+			this.textBox2.TabIndex = 91;
+			// 
+			// label17
+			// 
+			this.label17.AutoSize = true;
+			this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label17.Location = new System.Drawing.Point(48, 758);
+			this.label17.Name = "label17";
+			this.label17.Size = new System.Drawing.Size(44, 20);
+			this.label17.TabIndex = 90;
+			this.label17.Text = "Ao =";
+			// 
+			// textBox4
+			// 
+			this.textBox4.Location = new System.Drawing.Point(101, 860);
+			this.textBox4.Name = "textBox4";
+			this.textBox4.ReadOnly = true;
+			this.textBox4.Size = new System.Drawing.Size(100, 22);
+			this.textBox4.TabIndex = 95;
+			// 
+			// label18
+			// 
+			this.label18.AutoSize = true;
+			this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label18.Location = new System.Drawing.Point(48, 860);
+			this.label18.Name = "label18";
+			this.label18.Size = new System.Drawing.Size(44, 20);
+			this.label18.TabIndex = 94;
+			this.label18.Text = "As =";
+			// 
+			// textBox3
+			// 
+			this.textBox3.Location = new System.Drawing.Point(101, 822);
+			this.textBox3.Name = "textBox3";
+			this.textBox3.ReadOnly = true;
+			this.textBox3.Size = new System.Drawing.Size(100, 22);
+			this.textBox3.TabIndex = 93;
+			// 
+			// label19
+			// 
+			this.label19.AutoSize = true;
+			this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label19.Location = new System.Drawing.Point(48, 822);
+			this.label19.Name = "label19";
+			this.label19.Size = new System.Drawing.Size(38, 20);
+			this.label19.TabIndex = 92;
+			this.label19.Text = "fs =";
+			// 
 			// DopplerForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1924, 1055);
+			this.Controls.Add(this.textBox4);
+			this.Controls.Add(this.label18);
+			this.Controls.Add(this.textBox3);
+			this.Controls.Add(this.label19);
+			this.Controls.Add(this.textBox2);
+			this.Controls.Add(this.label17);
+			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.label16);
 			this.Controls.Add(this.chart4);
 			this.Controls.Add(this.label14);
 			this.Controls.Add(this.label15);
@@ -415,5 +503,13 @@ namespace ExperimentalDataProcessing.Labs.CourceWork
 		private System.Windows.Forms.TextBox txtf;
 		private System.Windows.Forms.Button btnPlot;
 		private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.Label label16;
+		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.Label label17;
+		private System.Windows.Forms.TextBox textBox4;
+		private System.Windows.Forms.Label label18;
+		private System.Windows.Forms.TextBox textBox3;
+		private System.Windows.Forms.Label label19;
 	}
 }
