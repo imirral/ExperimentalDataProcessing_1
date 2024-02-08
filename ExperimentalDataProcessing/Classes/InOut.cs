@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using NAudio.Wave;
@@ -106,6 +108,68 @@ namespace ExperimentalDataProcessing.Classes
 
 				writer.Write(result, 0, length);
 			}
+		}
+
+		public double[,] ReadJpg(string fileName, out int width, out int height)
+		{
+			if (!File.Exists(fileName))
+			{
+				throw new FileNotFoundException("Файл не существует", fileName);
+			}
+
+			using (var img = new Bitmap(fileName))
+			{
+				width = img.Width;
+				height = img.Height;
+
+				var result = new double[width, height];
+
+				for (var i = 0; i < width; i++)
+				{
+					for (var j = 0; j < height; j++)
+					{
+						var pixelColor = img.GetPixel(i, j);
+
+						double grayValue = pixelColor.GetBrightness() * 255;
+
+						result[i, j] = grayValue;
+					}
+				}
+
+				return result;
+			}
+		}
+
+		public void WriteJpg(string filePath, double[,] data)
+		{
+			if (string.IsNullOrEmpty(filePath))
+			{
+				throw new ArgumentException("Путь к файлу не указан");
+			}
+
+			var height = data.GetLength(0);
+			var width = data.GetLength(1);
+
+			var newImage = new Bitmap(height, width);
+
+			for (var j = 0; j < height; j++)
+			{
+				for (var i = 0; i < width; i++)
+				{
+					var grayValue = (int)data[j, i];
+
+					if (grayValue > 255)
+					{
+						grayValue = 255;
+					}
+
+					var newColor = Color.FromArgb(grayValue, grayValue, grayValue);
+
+					newImage.SetPixel(j, i, newColor);
+				}
+			}
+
+			newImage.Save(filePath, ImageFormat.Jpeg);
 		}
 	}
 }

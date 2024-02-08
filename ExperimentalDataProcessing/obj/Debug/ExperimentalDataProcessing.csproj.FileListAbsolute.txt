@@ -56,3 +56,4 @@ D:\Magistracy\1.2\Методы обработки экспериментальн
 D:\Magistracy\1.2\Методы обработки экспериментальных данных\ExperimentalDataProcessing\ExperimentalDataProcessing\obj\Debug\ExperimentalDataProcessing.csproj.CopyComplete
 D:\Magistracy\1.2\Методы обработки экспериментальных данных\ExperimentalDataProcessing\ExperimentalDataProcessing\obj\Debug\ExperimentalDataProcessing.exe
 D:\Magistracy\1.2\Методы обработки экспериментальных данных\ExperimentalDataProcessing\ExperimentalDataProcessing\obj\Debug\ExperimentalDataProcessing.pdb
+D:\Magistracy\1.2\Методы обработки экспериментальных данных\ExperimentalDataProcessing\ExperimentalDataProcessing\obj\Debug\ExperimentalDataProcessing.Labs._2_semester.Lab1_1Form.resources

@@ -241,6 +241,12 @@
     <Compile Include="Labs\1 semester\Lab9_2Form.Designer.cs">
       <DependentUpon>Lab9_2Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Labs\2 semester\Lab1_1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labs\2 semester\Lab1_1Form.Designer.cs">
+      <DependentUpon>Lab1_1Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Labs\CourceWork\DopplerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -333,6 +339,9 @@
     <EmbeddedResource Include="Labs\1 semester\Lab9_2Form.resx">
       <DependentUpon>Lab9_2Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Labs\2 semester\Lab1_1Form.resx">
+      <DependentUpon>Lab1_1Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Labs\CourceWork\DopplerForm.resx">
       <DependentUpon>DopplerForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -366,7 +375,6 @@
     <Folder Include="Data\Bin\" />
     <Folder Include="Data\Dat\" />
     <Folder Include="Data\Wav\" />
-    <Folder Include="Labs\2 semester\" />
     <Folder Include="Screenshots\1 semester\" />
     <Folder Include="Screenshots\2 semester\" />
     <Folder Include="Tasks\1 semester\" />

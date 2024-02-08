@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using ExperimentalDataProcessing.Labs._1_semester;
-using ExperimentalDataProcessing.Labs.CourceWork;
+using ExperimentalDataProcessing.Labs._2_semester;
 
 namespace ExperimentalDataProcessing
 {
@@ -14,7 +13,7 @@ namespace ExperimentalDataProcessing
 
 			Application.SetCompatibleTextRenderingDefault(false);
 
-			Application.Run(new DopplerWithNoiseForm());
+			Application.Run(new Lab1_1Form());
 		}
 	}
 }

@@ -124,6 +124,66 @@ namespace ExperimentalDataProcessing.Classes
 			return result;
 		}
 
+		public double[,] Shift2D(double[,] data, double c)
+		{
+			if (data == null)
+			{
+				throw new Exception("Массив имеет значение null");
+			}
+
+			if (data.GetLength(0) == 0 || data.GetLength(1) == 0)
+			{
+				throw new Exception("Массив не содержит элементов");
+			}
+
+			var height = data.GetLength(0);
+			var width = data.GetLength(1);
+
+			var result = new double[height, width];
+
+			Array.Copy(data, result, data.Length);
+
+			for (var i = 0; i < height; i++)
+			{
+				for (var j = 0; j < width; j++)
+				{
+					result[i, j] += c;
+				}
+			}
+
+			return result;
+		}
+
+		public double[,] MultModel2D(double[,] data, double c)
+		{
+			if (data == null)
+			{
+				throw new Exception("Массив имеет значение null");
+			}
+
+			if (data.GetLength(0) == 0 || data.GetLength(1) == 0)
+			{
+				throw new Exception("Массив не содержит элементов");
+			}
+
+			var height = data.GetLength(0);
+			var width = data.GetLength(1);
+
+			var result = new double[height, width];
+
+			Array.Copy(data, result, data.Length);
+
+			for (var i = 0; i < height; i++)
+			{
+				for (var j = 0; j < width; j++)
+				{
+					result[i, j] *= c;
+				}
+			}
+
+			return result;
+		}
+
 		public double[] Spikes(double[] data, double m, double r, double rs, bool isSigned = true)
 		{
 			if (data == null)
